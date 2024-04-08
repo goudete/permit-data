@@ -14,15 +14,18 @@ https://data.sfgov.org/Housing-and-Buildings/SF-Planning-Permitting-Data/kncr-c6
 
 ## Scripts
 
-### NY Permits (`ny-permits.py`)
+### NY Permits (`src/permits/ny-permits.py`)
 
 - `get_2024_permits()`: Filters the NY permit data to include only the permits issued in the year 2024. The filtered data is then outputted to the `output/` directory.
 - `search_for_job_number(job_number)`: Searches the NY permit data for a specific job number. If found, the corresponding data is outputted to the `output/` directory.
 
-### SF Permits (`sf-permits.py`)
+### SF Permits (`src/permits/sf-permits.py`)
 
 - `get_via_project_id(project_id)`: Filters the SF permit data based on a given project ID. The filtered data is then saved to the `output/` directory.
 - `get_ev_fleet_projects()`: Filters the SF permit data to find projects related to Electric Vehicles (EV). The filtered data is outputted to the `output/` directory.
+
+### Scraper (`src/scraper/scrape.py`)
+Scrapes emails based on company name
 
 ## Dependency Management
 
