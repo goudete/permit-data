@@ -13,16 +13,11 @@ def find_emails(content):
 
 def _validate_email(email):
     try:
-        # Check that the email address is valid. Turn on check_deliverability
-        # for first-time validations like on account creation pages (but not
-        # login pages).
         emailinfo = validate_email(email, check_deliverability=True)
         email = emailinfo.normalized
         return email
 
     except EmailNotValidError as e:
-        # The exception message is human-readable explanation of why it's
-        # not a valid (or deliverable) email address.
         print(str(e))
         return
 
