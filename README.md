@@ -25,7 +25,7 @@ https://data.sfgov.org/Housing-and-Buildings/SF-Planning-Permitting-Data/kncr-c6
 - `get_ev_fleet_projects()`: Filters the SF permit data to find projects related to Electric Vehicles (EV). The filtered data is outputted to the `output/` directory.
 
 ### Scraper (`src/scraper/scrape.py`)
-Scrapes emails based on company name
+Scrapes emails based on company name 
 
 ## Dependency Management
 
